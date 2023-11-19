@@ -171,7 +171,7 @@
                    <div class="work-experience1" id="stereo">
                        <div class="row">
                            <div class="col-md-7">
-                               <img src="./assets/images/driving.gif" alt="Not Candid" style="width:650px;height:325px">
+                               <img src="./assets/images/stereo.gif" alt="Not Candid" style="width:650px;height:325px">
                            </div>
                            <div class="col-md-7">
                                <h3 class="h5">3D Stereo Vision for Pseudo Lidar -<a href="https://github.com/lucifer2700"><u>Github</u></a></h3>
@@ -181,10 +181,10 @@
                    </div>
                    <div class="work-experience1" id="segmentation">
                        <div class="row">
-                           <div class="col-md-3">
-                               <img src="./assets/images/Segmentation_final_video.gif" alt="Not Candid" style="width:250px;height:250px">
+                           <div class="col-md-7">
+                               <img src="./assets/images/Segmentation_final_video.gif" alt="Not Candid" style="width:650px;height:325px">
                            </div>
-                           <div class="col-md-9">
+                           <div class="col-md-7">
                                <h3 class="h5">Road Segmentation Model for Autonomous Driving - <a href="https://github.com/Lucifer2700/UCBerkley_Segmentation"><u>Github</u></a></h3>
                                <p>I trained a Deep Learning model having encoder decoder and skip connections architecture for road segmentation for video feed. I used the Berkeley BDK100 dataset for training and validation. The test set was a custom video from actual roads in Paris. The vision system was able to segment drivable area with a 95% accuracy rate.</p>
                            </div>
@@ -204,7 +204,7 @@
                     <div class="work-experience" id="Zero-Shot_NST">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="" alt="Not Candid" style="width:250px;height:250px">
+                                <img src="styled_cat.jpg" alt="Not Candid" style="width:250px;height:250px">
                             </div>
                             <div class="col-md-9">
                                 <h3 class="h5">Zero-Shot Semantic Neural style Trasfer - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>Github</u></a></h3>
@@ -239,26 +239,26 @@
                    <div class="work-experience" id="conditional_monitoring">
                        <div class="row">
                            <div class="col-md-3">
-                               <img src="./assets/images/layout.jpg" alt="Not Candid" style="width:250px;height:240px">
+                               <img src="./assets/images/layout.jpg" alt="Not Candid" style="width:250px;height:250px">
                            </div>
                            <div class="col-md-9">
-                               <h3 class="h5">Vibration Analysis of Hydrodynamic Conical Journal Bearing using Machine Learning - <a href="https://drive.google.com/file/d/1qyP3kvK9_M_7ZvzFhEx7sqiWK07W2Dln/view?usp=drive_link"><u>Undergrad Thesis</u></a></h3>
+                               <h3 class="h5">Vibration Analysis of Hydrodynamic Conical Journal Bearing using Machine Learning - <a href="https://drive.google.com/file/d/1RtwcnEjov10-Yr5GCeMcdahW4RewRdyT/view?usp=sharing"><u>Undergrad Thesis</u></a></h3>
                                <p>We performed conditional monitoring for a conical journal bearing using C++, MATLAB and various machine learning metods.</p>
                                <p> We give a comparative analysis of CNNs, SVMs, RF, KNN methods for prediction of the Bearing health. A dynamic model of the lubrication system was also propsed in this thesis to explain the vibration signal peaks in the FFT for vibration data. The research was presented at International conference for Industrial Tribology.</p>
                            </div>
                        </div>
                    </div>
-                   <!-- <div class="work-experience" id="parking">
+                   <div class="work-experience" id="multiagent">
                        <div class="row">
                            <div class="col-md-3">
-                               <img src="./assets/images/img-12.png" alt="Not Candid" style="width:250px;height:250px">
+                               <img src="./assets/images/multiagent.gif" alt="Not Candid" style="width:250px;height:250px">
                            </div>
                            <div class="col-md-9">
-                               <h3 class="h5">Autonomous Car Parking</h3>
-                               <p>In this project, we implemented autonomous car parking using control law. To achieve this, we updated the existing 3-dimensional control law for non-holonomic systems to avoid singularities and handle the disturbances more effectively. We also designed a reaching law that generates states considering the actuator constraints. We then used this controller and reaching law to drive the car to the given position and orientation in minimum time.</p>
+                               <h3 class="h5">Multi-agent Localization using Distributed Kalman Filter and Formation control</h3>
+                               <p>In this project, I implemented a novel Kalman filter based algorithm using consenus for agent localization and control based on energy tanks principle. To achieve this, we updated the existing 3-dimensional control law for non-holonomic systems to avoid singularities and handle the disturbances more effectively. We also designed a reaching law that generates states considering the actuator constraints. We then used this controller and reaching law to drive the car to the given position and orientation in minimum time.</p>
                            </div>
                        </div>
-                   </div> -->
+                   </div>
 
                    <!-- <div class="work-experience1" id="panorama">
                        <div class="row">
@@ -479,25 +479,22 @@
     }
     function controls() {
         document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "block";
-        document.getElementById('kalman').style.display = "block";
-        document.getElementById('Zero-Shot_NST').style.display = "block";
-        document.getElementById('acc').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "block";
         document.getElementById('conditional_monitoring').style.display = "none";
-        document.getElementById('AutoCalib').style.display = "none";
-        document.getElementById('farming').style.display = "none";
-        document.getElementById('riscv').style.display = "none";
-        document.getElementById('multiagent').style.display = "none";
+        document.getElementById('multiagent').style.display = "block";
     }
     function show2() {
         document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "block";
+        document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
         document.getElementById('NeRF').style.display = "none";
         document.getElementById('droneNMPC').style.display = "none";
         document.getElementById('parking').style.display = "none";
-        document.getElementById('panorama').style.display = "block";
-        document.getElementById('AutoCalib').style.display = "block";
+        document.getElementById('panorama').style.display = "none";
+        document.getElementById('AutoCalib').style.display = "none";
         document.getElementById('farming').style.display = "none";
         document.getElementById('riscv').style.display = "none";
         document.getElementById('multiagent').style.display = "none";
