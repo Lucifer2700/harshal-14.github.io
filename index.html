@@ -171,7 +171,7 @@
                    <div class="work-experience1" id="stereo">
                        <div class="row">
                            <div class="col-md-7">
-                               <img src="./assets/images/stereo.gif" alt="Not Candid" style="width:650px;height:325px">
+                               <img src="./assets/images/out.gif" alt="Not Candid" style="width:700px;height:325px">
                            </div>
                            <div class="col-md-7">
                                <h3 class="h5">3D Stereo Vision for Pseudo Lidar -<a href="https://github.com/lucifer2700"><u>Github</u></a></h3>
@@ -182,7 +182,7 @@
                    <div class="work-experience1" id="segmentation">
                        <div class="row">
                            <div class="col-md-7">
-                               <img src="./assets/images/Segmentation_final_video.gif" alt="Not Candid" style="width:650px;height:325px">
+                               <img src="./assets/images/Segmentation_final_video.gif" alt="Not Candid" style="width:700px;height:325px">
                            </div>
                            <div class="col-md-7">
                                <h3 class="h5">Road Segmentation Model for Autonomous Driving - <a href="https://github.com/Lucifer2700/UCBerkley_Segmentation"><u>Github</u></a></h3>
@@ -193,7 +193,7 @@
                    <div class="work-experience" id="kalman">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="./assets/images/Kalman Filter tracking.gif" alt="Not Candid" style="width:250px;height:250px">
+                                <img src="./assets/images/Kalman Filter tracking.gif" alt="Not Candid" style="width:700px;height:325px">
                             </div>
                             <div class="col-md-9">
                                 <h3 class="h5">Bicycle Tracking Using Unscented Kalman Filter - <a href="https://github.com/Lucifer2700/Kalman_filters"><u>Github</u></a></h3>
@@ -227,7 +227,7 @@
                    <div class="work-experience1" id="acc">
                        <div class="row">
                            <div class="col-md-6">
-                               <img src="./assets/images/acc.gif" alt="Not Candid" style="width:490px;height:250px">
+                               <img src="./assets/images/acc.gif" alt="Not Candid" style="width:700px;height:325px">
                            </div>
                            <div class="col-md-6">
                                <h3 class="h5"><a href="./assets/images/acc.gif" title="Report"><u></u> </a>- Adaptive Cruise Control System using MATLAB<a href="https://github.com/harshal-14/Adaptive_Cruise_Control_System_using_MATLAB"><u>Github</u></a></h3>
@@ -472,9 +472,8 @@
         document.getElementById('Zero-Shot_NST').style.display = "block";
         document.getElementById('acc').style.display = "none";
         document.getElementById('conditional_monitoring').style.display = "none";
-        document.getElementById('AutoCalib').style.display = "none";
-        document.getElementById('farming').style.display = "none";
-        document.getElementById('riscv').style.display = "none";
+        document.getElementById('droneLQR').style.display = "none";
+        document.getElementById('autonomous_harvester').style.display = "none";
         document.getElementById('multiagent').style.display = "none";
     }
     function controls() {
@@ -484,31 +483,29 @@
         document.getElementById('Zero-Shot_NST').style.display = "none";
         document.getElementById('acc').style.display = "block";
         document.getElementById('conditional_monitoring').style.display = "none";
+        document.getElementById('droneLQR').style.display = "block";
+        document.getElementById('autonomous_harvester').style.display = "none";
         document.getElementById('multiagent').style.display = "block";
     }
     function show2() {
         document.getElementById('stereo').style.display = "none";
         document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
-        document.getElementById('NeRF').style.display = "none";
-        document.getElementById('droneNMPC').style.display = "none";
-        document.getElementById('parking').style.display = "none";
-        document.getElementById('panorama').style.display = "none";
-        document.getElementById('AutoCalib').style.display = "none";
-        document.getElementById('farming').style.display = "none";
-        document.getElementById('riscv').style.display = "none";
-        document.getElementById('multiagent').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "block";
+        document.getElementById('conditional_monitoring').style.display = "none";
+        document.getElementById('droneLQR').style.display = "block";
+        document.getElementById('autonomous_harvester').style.display = "none";
+        document.getElementById('multiagent').style.display = "block";
     }
     function hardware() {
         document.getElementById('stereo').style.display = "none";
         document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
-        document.getElementById('NeRF').style.display = "none";
-        document.getElementById('droneNMPC').style.display = "none";
-        document.getElementById('parking').style.display = "none";
-        document.getElementById('panorama').style.display = "none";
-        document.getElementById('AutoCalib').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
         document.getElementById('conditional_monitoring').style.display = "block";
+        document.getElementById('droneLQR').style.display = "none";
         document.getElementById('autonomous_harvester').style.display = "block";
         document.getElementById('multiagent').style.display = "none";
     }
@@ -516,13 +513,11 @@
         document.getElementById('stereo').style.display = "none";
         document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
-        document.getElementById('NeRF').style.display = "none";
-        document.getElementById('droneNMPC').style.display = "none";
-        document.getElementById('parking').style.display = "none";
-        document.getElementById('panorama').style.display = "none";
-        document.getElementById('AutoCalib').style.display = "none";
-        document.getElementById('farming').style.display = "none";
-        document.getElementById('riscv').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "block";
+        document.getElementById('droneLQR').style.display = "none";
+        document.getElementById('autonomous_harvester').style.display = "block";
         document.getElementById('multiagent').style.display = "none";
     }
 </script>
