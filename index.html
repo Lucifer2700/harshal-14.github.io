@@ -83,7 +83,7 @@
                            <div class="education-experience">
                                <small class="date">May 2022</small>
                                <h3 class="h5 date-title">Bachelor's of Technology in Mecahnical Engineering</h3>
-                               <p>Veermata Jijabai Technological Insstitute(VJTI), Mumbai University</p>
+                               <p>Veermata Jijabai Technological Institute(VJTI), Mumbai University</p>
                                <p>GPA: 8.28/10.0</p>
                            </div>
                        </div>
@@ -140,8 +140,8 @@
                    <h2>Research Experience</h2>
                    <div class="work-experience">
                        <small class="date">Aug 2023 - Present</small>
-                       <h3 class="h5 date-title">Decentralised Multi-agent Formation control and simultaneous target localization - - <a title="Professor at California Polytechnic Institute">Dr. Siavesh Farzan</a></h3>
-                       <p>Working on implementing novel control and consensus algorithms for multi-agent systems under localization errors like UAVs and warehouse robots. Implementing Distributed Kalman filtering based on approximate graph theory based approach.</p>
+                       <h3 class="h5 date-title">Decentralised Multi-agent Formation control and simultaneous target localization - <a title="Professor at California Polytechnic Institute">Dr. Siavesh Farzan</a></h3>
+                       <p>Working on implementing novel localization algorithms based on consensus for multi-agent systems under localization errors like UAVs and warehouse robots. Implementing Unscented Distributed Kalman filtering approach taking robust measures into account.</p>
                    </div>
 
                    <div class="work-experience">
@@ -160,18 +160,18 @@
                        </div>
                        <div class="col-md-10">
                            <ul class="list-icons">
-                               <li><input type="button" class="btn btn-primary" value="Computer Vision" onclick="controls()" /></li>
+                               <li><input type="button" class="btn btn-primary" value="Computer Vision" onclick="computer_vision()" /></li>
                                <li><input type="button" class="btn btn-primary" value="Controls" onclick="controls()" /></li>
-                               <li><input type="button" class="btn btn-primary" value="Reinforcement Learning" onclick="show4()" /></li>
+                               <!-- <li><input type="button" class="btn btn-primary" value="Reinforcement Learning" onclick="show4()" /></li> -->
                                <li><input type="button" class="btn btn-primary" value="Planning" onclick="show2()" /></li>
-                               <li><input type="button" class="btn btn-primary" value="Embedded and Hardware" onclick="show3()" /></li>
+                               <li><input type="button" class="btn btn-primary" value="Embedded and Hardware" onclick="hardware()" /></li>
                            </ul>
                        </div>
                    </div>
                    <div class="work-experience1" id="stereo">
                        <div class="row">
-                           <div class="col-md-5">
-                               <img src="./assets/images/driving.gif" alt="Not Candid" style="width:432px;height:243px">
+                           <div class="col-md-7">
+                               <img src="./assets/images/driving.gif" alt="Not Candid" style="width:650px;height:325px">
                            </div>
                            <div class="col-md-7">
                                <h3 class="h5">3D Stereo Vision for Pseudo Lidar -<a href="https://github.com/lucifer2700"><u>Github</u></a></h3>
@@ -201,53 +201,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work-experience" id="NeRF">
+                    <div class="work-experience" id="Zero-Shot_NST">
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="" alt="Not Candid" style="width:250px;height:250px">
                             </div>
                             <div class="col-md-9">
-                                <h3 class="h5">NeRF stitching for multi-environment object view - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>github</u></a></h3>
-                                <p>We merge 2 NeRF models to simulate objects in different environments by Deep Learning approach and implement it on Embedded hardware Jetson Nano</p>
+                                <h3 class="h5">Zero-Shot Semantic Neural style Trasfer - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>Github</u></a></h3>
+                                <p>We implemented a novel architecture for Neural Style Transfer based on Unseen content images. The content and style image are encoded using a VGG19 backbone, pretrained on ImageNet dataset. The default content-style attention map is generated using AdaAttN. The attention map generated is then fused with controlling signals from the segmentation mask of the content image. The stylized feature is computed given the updated attention map, and the final stylized image is generated by passing through a VGG decoder followed by new encoder and perpetual loss is calculated.</p>
                             </div>
                         </div>
                     </div>                    
                     
-                   <div class="work-experience" id="droneNMPC">
+                   <div class="work-experience" id="droneLQR">
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="./assets/images/drone_traj.gif" alt="Not Candid" style="width:250px;height:250px">
                             </div>
                             <div class="col-md-9">
-                                <h3 class="h5">Robust Interception and Tracking for Quadrotor UAV - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>github</u></a></h3>
-                                <p>This project aimed at designing a controller for the quadrotor to intercept and catch an alient UAV ib defined space. First, I added a Non-linear MPC for hovering and state swithcing for behaviour modelling. I tested it in a Simulink simulation.</p>
+                                <h3 class="h5">Robust Interception and Tracking for Quadrotor UAV - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>Github</u></a></h3>
+                                <p>This project aimed at designing a controller for the quadrotor to intercept and catch an alient UAV in defined space. First, I added an Linear Quadratic controller for hovering and interception, tuned the controller using state-of-the-art techniques and simulated in MATLAB</p>
                             </div>
                         </div>
                     </div>
-                   <div class="work-experience1" id="drone">
+                   <div class="work-experience1" id="acc">
                        <div class="row">
                            <div class="col-md-6">
-                               <img src="./assets/images/gif_2.gif" alt="Not Candid" style="width:490px;height:250px">
+                               <img src="./assets/images/acc.gif" alt="Not Candid" style="width:490px;height:250px">
                            </div>
                            <div class="col-md-6">
-                               <h3 class="h5"><a href="https://docs.google.com/presentation/d/1jvrWu1Z-Z5oUr2KlzB_hyBxGUUz9EgCE/edit?usp=sharing&ouid=102815419437323577275&rtpof=true&sd=true" title="Report"><u>Vision Based Obstacle Avoidance Drone</u> </a>- <a href="https://github.com/vishrut75/Vision-Based-Drone"><u>github</u></a></h3>
-                               <p>We designed an algorithm derived from the Classical Potential Field Algorithm for a vision-based drone to navigate an unknown tunnel by avoiding obstacles autonomously.</p>
-                               <p>We used SLAM and Octomap to map the observed world. To explore and navigate the tunnel effectively, we maintained a temporary destination calculated based on past values and the drone's movement and used the A* algorithm for path planning.</p>
+                               <h3 class="h5"><a href="./assets/images/acc.gif" title="Report"><u></u> </a>- Adaptive Cruise Control System using MATLAB<a href="https://github.com/harshal-14/Adaptive_Cruise_Control_System_using_MATLAB"><u>Github</u></a></h3>
+                               <p>I designed an Adaptive cruise control in MATLAB/Simulink using a linear Model Predictive Controller(MPC) using transfer functions to regulate the accelerator pedal sequence</p>
+                               <p>The behavior of the follower vehicle was regulated by the set-point reference velocity and intervehicular distance, 3 different states were modeled in the stateflow designer</p>
                            </div>
                        </div>
                    </div>
-                   <div class="work-experience" id="scara">
+                   <div class="work-experience" id="conditional_monitoring">
                        <div class="row">
                            <div class="col-md-3">
-                               <img src="./assets/images/horizontal_x.gif" alt="Not Candid" style="width:250px;height:240px">
+                               <img src="./assets/images/layout.jpg" alt="Not Candid" style="width:250px;height:240px">
                            </div>
                            <div class="col-md-9">
-                               <h3 class="h5">Position and Velocity Control of SCARA Robot - <a href="https://github.com/vishrut75/Scara-Control"><u>github</u></a></h3>
-                               <p>We designed URDF for SCARA(RRP) robot and implemented forward and inverse kinematics services for the end effector. We then used these services to develop a PID controller for position and velocity control.</p>
+                               <h3 class="h5">Vibration Analysis of Hydrodynamic Conical Journal Bearing using Machine Learning - <a href="https://drive.google.com/file/d/1qyP3kvK9_M_7ZvzFhEx7sqiWK07W2Dln/view?usp=drive_link"><u>Undergrad Thesis</u></a></h3>
+                               <p>We performed conditional monitoring for a conical journal bearing using C++, MATLAB and various machine learning metods.</p>
+                               <p> We give a comparative analysis of CNNs, SVMs, RF, KNN methods for prediction of the Bearing health. A dynamic model of the lubrication system was also propsed in this thesis to explain the vibration signal peaks in the FFT for vibration data. The research was presented at International conference for Industrial Tribology.</p>
                            </div>
                        </div>
                    </div>
-                   <div class="work-experience" id="parking">
+                   <!-- <div class="work-experience" id="parking">
                        <div class="row">
                            <div class="col-md-3">
                                <img src="./assets/images/img-12.png" alt="Not Candid" style="width:250px;height:250px">
@@ -257,9 +258,9 @@
                                <p>In this project, we implemented autonomous car parking using control law. To achieve this, we updated the existing 3-dimensional control law for non-holonomic systems to avoid singularities and handle the disturbances more effectively. We also designed a reaching law that generates states considering the actuator constraints. We then used this controller and reaching law to drive the car to the given position and orientation in minimum time.</p>
                            </div>
                        </div>
-                   </div>
+                   </div> -->
 
-                   <div class="work-experience1" id="panorama">
+                   <!-- <div class="work-experience1" id="panorama">
                        <div class="row">
                            <div class="col-md-6">
                                <img src="./assets/images/output2.png" alt="Not Candid" style="width:490px;height:250px">
@@ -269,8 +270,8 @@
                                <p>Implemented the panorama stiching algorithm which calculates homotopy tranformation between images and then blend them into one single image.</p>
                            </div>
                        </div>
-                   </div>
-                   <div class="work-experience1" id="AutoCalib">
+                   </div> -->
+                   <!-- <div class="work-experience1" id="AutoCalib">
                        <div class="row">
                            <div class="col-md-3">
                                <img src="./assets/images/Clib.png" alt="Not Candid" style="width:250px;height:250px">
@@ -280,8 +281,8 @@
                                <p>Implemented automatic efficient and robust camera calibration presented by Zhengyou Zhang in <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf"><u>this</u></a> paper.</p>
                            </div>
                        </div>
-                   </div>
-                   <div class="work-experience1" id="farming">
+                   </div> -->
+                   <!-- <div class="work-experience1" id="farming">
                        <div class="row">
                            <div class="col-md-3">
                                <img src="./assets/images/img-11.png" alt="Not Candid" style="width:230px;height:250px">
@@ -292,8 +293,8 @@
                                <p>To achieve this, we designed a robot with three independent platforms, which could move vertically, connected through a frame. The middle platform was equipped with farming mechanisms, whereas the other two were responsible for motion. As the problem statement required movement in all directions, we used servos to rotate wheels towards the desired direction.</p>
                            </div>
                        </div>
-                   </div>
-                   <div class="work-experience1" id="riscv">
+                   </div> -->
+                   <!-- <div class="work-experience1" id="riscv">
                        <div class="row">
                            <div class="col-md-3">
                                <img src="./assets/images/img-13.png" alt="Not Candid" style="width:250px;height:250px">
@@ -304,7 +305,7 @@
                                <p>We compared the performance of the designed processor with a general process in executing modern encryption and decryption algorithms. Our processor was able to run the AES algorithm with 80 times fewer operations when compared with the RISC-V processor.</p>
                            </div>
                        </div>
-                   </div>
+                   </div> -->
                </div>
            </div>
 
@@ -464,27 +465,25 @@
 </footer>
 
 <script>
-    function planning() {
-        document.getElementById('stereo').style.display = "none";
+    function computer_vision() {
+        document.getElementById('stereo').style.display = "block";
         document.getElementById('segmentation').style.display = "block";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('NeRF').style.display = "none";
-        document.getElementById('droneNMPC').style.display = "none";
-        document.getElementById('parking').style.display = "none";
-        document.getElementById('panorama').style.display = "none";
+        document.getElementById('kalman').style.display = "block";
+        document.getElementById('Zero-Shot_NST').style.display = "block";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "none";
         document.getElementById('AutoCalib').style.display = "none";
         document.getElementById('farming').style.display = "none";
         document.getElementById('riscv').style.display = "none";
-        document.getElementById('multiagent').style.display = "block";
+        document.getElementById('multiagent').style.display = "none";
     }
     function controls() {
         document.getElementById('stereo').style.display = "none";
         document.getElementById('segmentation').style.display = "block";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('NeRF').style.display = "none";
-        document.getElementById('droneNMPC').style.display = "none";
-        document.getElementById('parking').style.display = "block";
-        document.getElementById('panorama').style.display = "none";
+        document.getElementById('kalman').style.display = "block";
+        document.getElementById('Zero-Shot_NST').style.display = "block";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "none";
         document.getElementById('AutoCalib').style.display = "none";
         document.getElementById('farming').style.display = "none";
         document.getElementById('riscv').style.display = "none";
@@ -503,22 +502,22 @@
         document.getElementById('riscv').style.display = "none";
         document.getElementById('multiagent').style.display = "none";
     }
-    function show3() {
+    function hardware() {
         document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "block";
+        document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
         document.getElementById('NeRF').style.display = "none";
         document.getElementById('droneNMPC').style.display = "none";
         document.getElementById('parking').style.display = "none";
         document.getElementById('panorama').style.display = "none";
         document.getElementById('AutoCalib').style.display = "none";
-        document.getElementById('farming').style.display = "block";
-        document.getElementById('riscv').style.display = "block";
+        document.getElementById('conditional_monitoring').style.display = "block";
+        document.getElementById('autonomous_harvester').style.display = "block";
         document.getElementById('multiagent').style.display = "none";
     }
     function show4() {
         document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "block";
+        document.getElementById('segmentation').style.display = "none";
         document.getElementById('kalman').style.display = "none";
         document.getElementById('NeRF').style.display = "none";
         document.getElementById('droneNMPC').style.display = "none";
