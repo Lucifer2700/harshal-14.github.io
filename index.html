@@ -14,6 +14,21 @@
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
+  <style>
+    .work-experience1 {
+        display: flex;
+        justify-content: space-between; /* Adjusts space between items */
+        align-items: center; /* Aligns items vertically */
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    }
+
+    .work-experience1 > .row > .col-md-6, .col-md-7 {
+        flex: 1; /* Each child will take up equal space */
+        margin: 10px; /* Adds margin for spacing */
+        min-width: 300px; /* Minimum width for each column to prevent overlap */
+    }
+    </style>
+
 
   <title>Harshal Bhat</title>  
 
@@ -464,56 +479,48 @@
 </footer>
 
 <script>
+    function resetDisplay() {
+        // Hide all project sections initially
+        document.getElementById('stereo').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "none";
+        document.getElementById('droneLQR').style.display = "none";
+        document.getElementById('autonomous_harvester').style.display = "none";
+        document.getElementById('multiagent').style.display = "none";
+    }
+
     function computer_vision() {
+        resetDisplay();
         document.getElementById('stereo').style.display = "block";
         document.getElementById('segmentation').style.display = "block";
         document.getElementById('kalman').style.display = "block";
         document.getElementById('Zero-Shot_NST').style.display = "block";
-        document.getElementById('acc').style.display = "none";
-        document.getElementById('conditional_monitoring').style.display = "none";
-        document.getElementById('droneLQR').style.display = "none";
-        document.getElementById('autonomous_harvester').style.display = "none";
     }
+
     function controls() {
-        document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "none";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('Zero-Shot_NST').style.display = "none";
+        resetDisplay();
         document.getElementById('acc').style.display = "block";
-        document.getElementById('conditional_monitoring').style.display = "none";
         document.getElementById('droneLQR').style.display = "block";
-        document.getElementById('autonomous_harvester').style.display = "none";
         document.getElementById('multiagent').style.display = "block";
     }
+
     function show2() {
-        document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "none";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('Zero-Shot_NST').style.display = "none";
-        document.getElementById('acc').style.display = "none";
-        document.getElementById('conditional_monitoring').style.display = "none";
+        resetDisplay();
         document.getElementById('droneLQR').style.display = "block";
-        document.getElementById('autonomous_harvester').style.display = "none";
-        document.getElementById('multiagent').style.display = "none";
     }
+
     function hardware() {
-        document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "none";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('Zero-Shot_NST').style.display = "none";
-        document.getElementById('acc').style.display = "none";
+        resetDisplay();
         document.getElementById('conditional_monitoring').style.display = "block";
-        document.getElementById('droneLQR').style.display = "none";
         document.getElementById('autonomous_harvester').style.display = "block";
     }
+
     function show4() {
-        document.getElementById('stereo').style.display = "none";
-        document.getElementById('segmentation').style.display = "none";
-        document.getElementById('kalman').style.display = "none";
-        document.getElementById('Zero-Shot_NST').style.display = "none";
-        document.getElementById('acc').style.display = "none";
+        resetDisplay();
         document.getElementById('conditional_monitoring').style.display = "block";
-        document.getElementById('droneLQR').style.display = "none";
         document.getElementById('autonomous_harvester').style.display = "block";
     }
 </script>
