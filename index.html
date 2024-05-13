@@ -135,7 +135,7 @@
                 <h2>Patents and Publications</h2>
                 <div class="work-experience">
                      <h3 class="h5 date-title">[2]	“An Autonomous System For Low Payload Gripper Changing Mechanism and its Method Thereof” </h3>
-                     <p>Published(Under examination) - <a href="https://drive.google.com/file/d/1Urgpw1ZwmvY5-VOZqXX7rW7A161gB6T-/view?usp=drive_link">The Indian Patent Office Journal No. 05/2022, Dated 04/02/2022, Part 1, pp. 24, Application no. (202211000649)</a></p>
+                     <p>Granted - <a href="https://drive.google.com/file/d/1Urgpw1ZwmvY5-VOZqXX7rW7A161gB6T-/view?usp=drive_link">The Indian Patent Office Journal Dated 15/03/2024, Patent No. 528223 </a></p>
                 </div>
               <div class="work-experience">
                      <h3 class="h5 date-title">[2]	“Automatic Harvester”</h3>
@@ -479,50 +479,60 @@
 </footer>
 
 <script>
-    // Function to hide all sections
-    function resetDisplay() {
-        var sections = ['stereo', 'segmentation', 'kalman', 'Zero-Shot_NST', 'acc', 'conditional_monitoring', 'droneLQR', 'autonomous_harvester', 'multiagent'];
-        sections.forEach(function(section) {
-            document.getElementById(section).style.display = "none";
-        });
-    }
-
-    // Display relevant sections for Computer Vision
     function computer_vision() {
-        resetDisplay();
         document.getElementById('stereo').style.display = "block";
         document.getElementById('segmentation').style.display = "block";
         document.getElementById('kalman').style.display = "block";
         document.getElementById('Zero-Shot_NST').style.display = "block";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "none";
+        document.getElementById('droneLQR').style.display = "none";
+        document.getElementById('autonomous_harvester').style.display = "none";
     }
-
-    // Display relevant sections for Controls
     function controls() {
-        resetDisplay();
+        document.getElementById('stereo').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
         document.getElementById('acc').style.display = "block";
+        document.getElementById('conditional_monitoring').style.display = "none";
         document.getElementById('droneLQR').style.display = "block";
+        document.getElementById('autonomous_harvester').style.display = "none";
         document.getElementById('multiagent').style.display = "block";
     }
-
-    // Display relevant sections for Planning
     function show2() {
-        resetDisplay();
+        document.getElementById('stereo').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "none";
         document.getElementById('droneLQR').style.display = "block";
+        document.getElementById('autonomous_harvester').style.display = "none";
+        document.getElementById('multiagent').style.display = "none";
     }
-
-    // Display relevant sections for Embedded and Hardware
     function hardware() {
-        resetDisplay();
+        document.getElementById('stereo').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
         document.getElementById('conditional_monitoring').style.display = "block";
+        document.getElementById('droneLQR').style.display = "none";
         document.getElementById('autonomous_harvester').style.display = "block";
     }
-
-    // Ensure to call the resetDisplay function on page load to hide all sections initially
-    document.addEventListener("DOMContentLoaded", function(event) {
-        resetDisplay();  // Call this function to ensure all sections are hidden initially
-        scrollRevelation('.card');
-    });
+    function show4() {
+        document.getElementById('stereo').style.display = "none";
+        document.getElementById('segmentation').style.display = "none";
+        document.getElementById('kalman').style.display = "none";
+        document.getElementById('Zero-Shot_NST').style.display = "none";
+        document.getElementById('acc').style.display = "none";
+        document.getElementById('conditional_monitoring').style.display = "block";
+        document.getElementById('droneLQR').style.display = "none";
+        document.getElementById('autonomous_harvester').style.display = "block";
+    }
 </script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
