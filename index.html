@@ -66,20 +66,18 @@
    <div class="row">
        <div class="col-xs-12">
 
-           <div class="card">
-               <div class="card-block">
-                   <h2>About me</h2>
-                   <div class="row">
-                       <div class="col-md-3">
-                           <p><img src="./assets/images/profile2.png" alt="Not Candid" style="width:250px;height:250px;border-radius:50%"></p>
-                       </div>
-                       <div class="col-md-9">
-                           <p>Greetings! I'm Harshal, a dedicated graduate student pursuing a Master's degree in Robotics at the esteemed Worcester Polytechnic Institute in MA. My journey into the fascinating realm of Robotics has ignited a profound enthusiasm within me, particularly in the domains of <b>Control Theory, Perception, and Reinforcement Learning.</b>My eagerness to explore extends to projects, especially those that delve into the realm of Autonomous cars, UAVs where I aspire to not only align with these captivating fields but also engage in innovative algorithmic solutions for complex challenges. I am eager to collaborate on projects that not only align with these areas of interest but also challenge me to create innovative algorithms to tackle intricate problems.</p>
-                           <p>I am actively seeking internship opportunities for Summer 2024. As a dynamic individual, I excel in roles that demand responsibility and leadership. My academic journey bears testament to my unwavering commitment, as I have consistently organized workshops and events, led numerous projects to success, and even secured a startup grant along the way.</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
+            <!-- About Section -->
+            <section class="card">
+                <h2>About Me</h2>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <img src="./assets/images/profile2.png" alt="Profile Photo" style="width: 250px; height: 250px;">
+                    <!-- Remove border-radius: 50%; from the image style -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <p>Greetings! I'm Harshal, a dedicated graduate student pursuing a Master's degree in Robotics at Worcester Polytechnic Institute in MA. My journey into the fascinating realm of Robotics has ignited a profound enthusiasm within me, particularly in the domains of <b>Control Theory, Perception, and Reinforcement Learning.</b></p>
+                        <p>I am actively seeking internship opportunities for Summer 2024. As a dynamic individual, I excel in roles that demand responsibility and leadership. My academic journey bears testament to my unwavering commitment, as I have consistently organized workshops and events, led numerous projects to success, and even secured a startup grant along the way.</p>
+                    </div>
+                </div>
+            </section>
 
 
            <div class="card">
@@ -536,8 +534,38 @@
                                 <img src="./assets/images/einstein-vision.gif" alt="Einstein Vision Example" style="width:100%; max-width:600px; height:auto;">
                             </div>
                             <div class="col-md-7">
-                                <h3 class="h5">Einstein Vision: Advanced Object Recognition</h3>
-                                <p>[Add your description here]</p>
+                                <h3 class="h5">Einstein Vision: Advanced Computer Vision Pipeline</h3>
+                                <p>Developed a comprehensive computer vision system integrating multiple detection and processing modules:</p>
+                                <ul>
+                                    <li><strong>3D Object Detection:</strong>
+                                        <ul>
+                                            <li>Implemented YOLOv8-Seg for primary object detection (vehicles, pedestrians, road signs, traffic lights)</li>
+                                            <li>Integrated DETIC for secondary object detection (brake lights, cones, poles, dustbins)</li>
+                                            <li>Used RAFT for optical flow analysis to determine object status (parked/moving)</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Depth Processing:</strong>
+                                        <ul>
+                                            <li>Utilized ZoeDepth for accurate depth map generation</li>
+                                            <li>Implemented IDEA-OSX for advanced object processing</li>
+                                            <li>Integrated YOLo3D for 3D pose estimation of detected objects</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>3D Lane Detection:</strong>
+                                        <ul>
+                                            <li>Employed YOLOPv2 for lane detection</li>
+                                            <li>Implemented 3D projection onto Blender world</li>
+                                            <li>Added polynomial curve fitting for smooth lane representation</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Scene Processing:</strong>
+                                        <ul>
+                                            <li>Developed Blender converter and parser for scene reconstruction</li>
+                                            <li>Created pipeline for generating side-by-side videos from sequential frames</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>The system outputs detailed scene information including object positions, classifications, and 3D poses, making it suitable for autonomous driving applications and advanced scene understanding.</p>
                             </div>
                         </div>
                     </div>
