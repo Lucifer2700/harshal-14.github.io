@@ -219,174 +219,6 @@
                    </div>
                </div>
            </div>
-
-           <!-- <div class="card">
-               <div class="card-block">
-                   <div class="row">
-                       <div class="col-md-2">
-                           <h2>Projects</h2>
-                       </div>
-                       <div class="col-md-10">
-                           <ul class="list-icons">
-                               <li><input type="button" class="btn btn-primary" value="Computer Vision" onclick="computer_vision()" /></li>
-                               <li><input type="button" class="btn btn-primary" value="Controls" onclick="controls()" /></li>
-                               <li><input type="button" class="btn btn-primary" value="Planning" onclick="show2()" /></li>
-                               <li><input type="button" class="btn btn-primary" value="Embedded and Hardware" onclick="hardware()" /></li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="work-experience1" id="stereo">
-                       <div class="row">
-                           <div class="col-md-7">
-                               <img src="./assets/images/out.gif" alt="Not Candid" style="width:600px;height:300px">
-                           </div>
-                           <div class="col-md-7">
-                               <h3 class="h5">3D Stereo Vision for Pseudo Lidar -<a href="https://github.com/lucifer2700"><u>Github</u></a></h3>
-                               <p>I developed a 3D Computer Vision pipeline, implementing disparity maps, 3D obstacle estimation, and 3D Point Cloud creation from Stereo Images. Utilized Stereo SGBM algorithms from OpenCV and integrated camera calibration for depth mapping. Caalculated disparity to depth and reprojected Image to 3D for obstacle detection along with distances.</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="work-experience1" id="segmentation">
-                       <div class="row">
-                           <div class="col-md-7">
-                               <img src="./assets/images/Segmentation_final_video.gif" alt="Not Candid" style="width:600px;height:300px">
-                           </div>
-                           <div class="col-md-7">
-                               <h3 class="h5">Road Segmentation Model for Autonomous Driving - <a href="https://github.com/Lucifer2700/UCBerkley_Segmentation"><u>Github</u></a></h3>
-                               <p>I trained a Deep Learning model having encoder decoder and skip connections architecture for road segmentation for video feed. I used the Berkeley BDK100 dataset for training and validation. The test set was a custom video from actual roads in Paris. The vision system was able to segment drivable area with a 95% accuracy rate.</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="work-experience" id="kalman">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <img src="./assets/images/Kalman Filter tracking.gif" alt="Not Candid" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-7">
-                                <h3 class="h5">Bicycle Tracking Using Unscented Kalman Filter - <a href="https://github.com/Lucifer2700/Kalman_filters"><u>Github</u></a></h3>
-                                <p>This project focuses on utilizing the Kalman filter to track a bicycle's movement in a surveillance video captured from a stationary camera. The video contains several challenges, including linear movement, abrupt turns, occlusion by objects (e.g., light posts), and occasional issues with object detection. I aimed to enhance the tracking accuracy and robustness by implementing the Kalman filter.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-experience" id="Zero-Shot_NST">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="./assets/images/styled_cat.jpg" alt="Not Candid" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-9">
-                                <h3 class="h5">Zero-Shot Semantic Neural style Trasfer - <a href="https://github.com/harshal-14/Zero-shot_Sematic_NST.git"><u>Github</u></a></h3>
-                                <p>We implemented a novel architecture for Neural Style Transfer based on Unseen content images. The content and style image are encoded using a VGG19 backbone, pretrained on ImageNet dataset. The default content-style attention map is generated using AdaAttN. The attention map generated is then fused with controlling signals from the segmentation mask of the content image. The stylized feature is computed given the updated attention map, and the final stylized image is generated by passing through a VGG decoder followed by new encoder and perpetual loss is calculated.</p>
-                            </div>
-                        </div>
-                    </div>                    
-                    
-                   <div class="work-experience" id="droneLQR">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="./assets/images/drone_traj.gif" alt="Not Candid" style="width:250px;height:250px">
-                            </div>
-                            <div class="col-md-9">
-                                <h3 class="h5">Robust Interception and Tracking for Quadrotor UAV - <a href="https://github.com/atreyabhat/RBE502_UAV_Interceptor"><u>Github</u></a></h3>
-                                <p>This project aimed at designing a controller for the quadrotor to intercept and catch an alient UAV in defined space. First, I added an Linear Quadratic controller for hovering and interception, tuned the controller using state-of-the-art techniques and simulated in MATLAB</p>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="work-experience1" id="acc">
-                       <div class="row">
-                           <div class="col-md-6">
-                               <img src="./assets/images/acc.gif" alt="Not Candid" style="width:600px;height:300px">
-                           </div>
-                           <div class="col-md-6">
-                               <h3 class="h5"><a href="./assets/images/acc.gif" title="Report"><u></u> </a>- Adaptive Cruise Control System using MATLAB<a href="https://github.com/harshal-14/Adaptive_Cruise_Control_System_using_MATLAB"><u>Github</u></a></h3>
-                               <p>I designed an Adaptive cruise control in MATLAB/Simulink using a linear Model Predictive Controller(MPC) using transfer functions to regulate the accelerator pedal sequence. The behavior of the follower vehicle was regulated by the set-point reference velocity and intervehicular distance, 3 different states were modeled in the stateflow designer</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="work-experience" id="conditional_monitoring">
-                       <div class="row">
-                           <div class="col-md-3">
-                               <img src="./assets/images/layout.jpg" alt="Not Candid" style="width:250px;height:250px">
-                           </div>
-                           <div class="col-md-9">
-                               <h3 class="h5">Vibration Analysis of Hydrodynamic Conical Journal Bearing using Machine Learning - <a href="https://drive.google.com/file/d/1RtwcnEjov10-Yr5GCeMcdahW4RewRdyT/view?usp=sharing"><u>Undergrad Thesis</u></a></h3>
-                               <p>We performed conditional monitoring for a conical journal bearing using C++, MATLAB and various machine learning metods.</p>
-                               <p> We give a comparative analysis of CNNs, SVMs, RF, KNN methods for prediction of the Bearing health. A dynamic model of the lubrication system was also propsed in this thesis to explain the vibration signal peaks in the FFT for vibration data. The research was presented at International conference for Industrial Tribology.</p>
-                           </div>
-                       </div>
-                   </div>
-
-                   <div class="work-experience" id="autopano">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="./assets/images/autopano.png" alt="AutoPano Example" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="h5">AutoPano - Automatic Panorama Stitching</h3>
-                                <p>Implemented an automatic panorama stitching algorithm from scratch that seamlessly combines 10 and more images into a single panoramic view. The project utilizes feature detection, matching, and homography estimation to align and blend images effectively.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="work-experience" id="sfm">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="./assets/images/wo_ba_3.png" alt="SfM Example of Unity Hall" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="h5">Structure from Motion (SfM) - 3D Reconstruction of Unity Hall</h3>
-                                <p>Implemented a comprehensive Structure from Motion pipeline for 3D reconstruction from multiple images. The project includes feature matching, fundamental matrix estimation, camera pose estimation, and triangulation. A key focus was on implementing bundle adjustment to refine camera poses and 3D points simultaneously.</p>
-                                <p>Bundle adjustment was formulated as an optimization problem minimizing the reprojection error across all cameras and 3D points:
-                                min∑∑V_ij(||x_j - P_i X_j||^2)</p>
-                                <p>The implementation used a sparse Jacobian matrix for efficiency and the Trust Region Reflective algorithm for optimization. The final reconstruction of Unity Hall at WPI demonstrated significant improvement in accuracy, with the reprojection error reducing from 1.751347 to 1.015014 after bundle adjustment.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work-experience" id="nerf">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="./assets/images/NeRF.gif" alt="NeRF Lego Example" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="h5">Neural Radiance Fields (NeRF) - Novel View Synthesis</h3>
-                                <p>Implemented a Neural Radiance Fields (NeRF) system for novel view synthesis. This project uses a fully connected deep network to represent a continuous 5D scene (3D spatial location and 2D viewing direction) and generate photorealistic images from new viewpoints.</p>
-                                <p>Key aspects of the implementation include:</p>
-                                <ul>
-                                    <li>Volume rendering with radiance fields using stratified sampling</li>
-                                    <li>Network architecture: MLP with ReLU activation, width 256, and skip connections</li>
-                                    <li>Positional encoding for improved fine detail representation</li>
-                                    <li>Training on synthetic (Lego, Ship) and real-world (Coffee Cup) datasets</li>
-                                </ul>
-                                <p>Results demonstrated significant improvement with positional encoding, achieving PSNR of 31.267 and SSIM of 0.9882 for the Lego model. The GIF above shows novel view synthesis for the Lego model after 200,000 iterations with positional encoding.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="work-experience" id="einstein-vision">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="./assets/images/einstein-vision.gif" alt="Einstein Vision Example" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="h5">Einstein Vision: Advanced Object Recognition</h3>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="work-experience" id="deep-vio">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="./assets/images/deep-vio.jpg" alt="Deep VIO Example" style="width:600px;height:300px">
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="h5">Deep VIO: Visual-Inertial Odometry with Deep Learning - <a href="https://github.com/yourusername/deep-vio"><u>Github</u></a></h3>
-                                <p>Implemented a deep learning-based Visual-Inertial Odometry (VIO) system that fuses visual and inertial data for accurate robot localization. This project enhances traditional VIO methods with neural networks for improved performance in challenging environments.</p>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-           </div> -->
            <div class="card">
                 <div class="card-block">
                     <div class="row">
@@ -471,6 +303,18 @@
                             <div class="col-md-7">
                                 <h3 class="h5">Adaptive Cruise Control System using MATLAB - <a href="https://github.com/harshal-14/Adaptive_Cruise_Control_System_using_MATLAB"><u>Github</u></a></h3>
                                 <p>I designed an Adaptive cruise control in MATLAB/Simulink using a linear Model Predictive Controller(MPC) using transfer functions to regulate the accelerator pedal sequence. The behavior of the follower vehicle was regulated by the set-point reference velocity and intervehicular distance, 3 different states were modeled in the stateflow designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-experience" id="dep">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="./assets/images/dep_cafe.gif" alt="Dynamic Exploration Planning" style="width:100%; max-width:600px; height:auto;">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="h5">DynaPRM: Efficient UAV Exploration in Dynamic Environments through Incremental Sampling PRM -<a href="https://github.com/harshal-14/Dynamic-exploration-planning.git"><u>Github</u></a></h3>
+                                <p>We, present DynaPRM, an incremental sampling-based probabilistic roadmap planner for UAV exploration in dynamic environments. Our approach addresses two key exploration challenges: efficient navigation of narrow passages and adaptive sampling density based on environment structure. DynaPRM detects and prioritizes exploration of confined spaces while employing sparse roadmap generation in open areas to optimize computational resources. The system integrates three core components: incremental PRM construction for viewpoint selection, multi-query planning for dynamic obstacle avoidance, and ESDF-based trajectory optimization for safe navigation. We evaluate the planner across diverse environments including confined spaces, maze-like structures, and open areas with moving obstacles. The results demonstrate the system's ability to maintain exploration coverage while adapting to different environment types. DynaPRM is particularly applicable to real-world scenarios such as search and rescue operations, where thorough exploration of complex, dynamic environments is essential</p>
                             </div>
                         </div>
                     </div>
